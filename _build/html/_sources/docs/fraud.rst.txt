@@ -1,0 +1,23 @@
+Fraud detection and prevention
+==============================
+
+Fraud basic setup and specification
+-----------------------------------
+
+Monitoring and filter alerts
+----------------------------
+
+Basic traffic filtering rules
+-----------------------------
+
+Account limits and threshold
+----------------------------
+
+Basic scoring system
+--------------------
+
+Cash-flow routing
+-----------------
+
+Advanced scoring analysis
+-------------------------

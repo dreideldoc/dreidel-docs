@@ -1,0 +1,45 @@
+eGlobal wallet giudlines
+
+1. Customer on-boarding process
+
+- Stage 1: Primary signup process is going through phone number with text code confirmation
+- Stage 2: Collecting personal data such as email, first name, last name, birth date, country
+- Stage 3: Collecting the following information from the customer: ID/Passport picture, Selfie picture with ID document on hand (high resolution). 
+- Stage 4: Performing the following validation steps - Check/Confirm identity on approved by local authorities services,
+	   match selfie with the ID picture, check expiration dates of each document provided
+- Stage 5: Screening procedure: perfom screening upon black list (OFAC, Sanction lists, local authority stop lists, etc)
+           of each individual/commercial entity or any other type of account within the system
+- Stage 6: Account goes to approved (green) status once all checks are finished
+
+Once Stage 1-6 are completed customer navigates to the main screen with the following functions available:
+
+- Add bank card to the account
+- Top-up the account with limited amount of (5000 USD)
+- Send the limited amount to another verified account of another individual or pay a bill sent by a business account (account which represents comercial entity)
+- Invite othe inviduals to eGlobal wallet
+- Communicate with support team
+
+Once a customer breaches limit of 5000 USD or taps, tries to activiate opening a bank account option,
+then the enhanced due dilligence process will be performed upon its account:
+
+- Stage 7: Collecting Proof of address along with its validation and matching identity owner
+
+Once the step above is done we assign a fully verified green account status to a customer
+
+2. Green accounts
+
+A customer which has green account status has an access to the following functions:
+
+- Opening a bank account (IBANK) via 3d party provider
+- Sending and receiving money from individuals/commercial entities
+- Withdraw funds automatically or manually apporved in case the amount is over 5000 USD
+- Sending/Receiving funds on his/her bank account by the means of bank wire transfers
+- Exchange funds across its wallet currencies
+
+Every and each customer money transfer is going through fraud monitoring and prevention system, in case of
+any fraudulent patternt detected, customer account will be blocked
+
+3. Business account
+
+Business accounts are similar to ay other account processing except of the list of documents which has to be provided
+and approved by internal AML and compliance team to gain Green status

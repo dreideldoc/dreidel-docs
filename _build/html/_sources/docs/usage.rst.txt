@@ -1,0 +1,20 @@
+Operations
+==========
+
+Administering system
+--------------------
+
+3d party integration process
+----------------------------
+
+Customer Due Diligence
+-----------------------
+
+Reconciliation
+--------------
+
+Communication process
+---------------------
+
+Alerting
+--------

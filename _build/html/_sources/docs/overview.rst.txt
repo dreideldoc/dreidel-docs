@@ -1,0 +1,37 @@
+System overview
+===============
+
+Abstract
+--------
+
+Reactive-Pay's abstract information
+
+Basic components
+----------------
+
+Basic component description
+
+UI and applications
+-------------------
+
+Interface brief
+
+Roles
+-----
+
+System operators and account roles
+
+Architecture and design
+-----------------------
+
+Micro-service architecture
+
+
+Security and encryption
+-----------------------
+
+Security and encryption standards applied to Reactive-Pay
+
+
+PCI DSS compliance
+------------------

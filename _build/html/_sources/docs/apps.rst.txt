@@ -1,0 +1,21 @@
+
+Web apps
+========
+
+
+Business account app
+--------------------
+
+Business account backend
+------------------------
+
+Management/Financial console
+----------------------------
+
+
+Account settings and fraud filter management console
+----------------------------------------------------
+
+
+Analytics and reporting system
+------------------------------

@@ -1,0 +1,14 @@
+Public API
+==========
+
+API use cases
+-------------
+
+Payment request flow
+--------------------
+
+Request encryption
+-------------------
+
+Payment request snapshot
+------------------------

@@ -1,0 +1,14 @@
+Core service
+============
+
+Entries or ledger record
+------------------------
+
+Transaction entry flow
+----------------------
+
+Entry types
+-----------
+
+Immutability
+------------

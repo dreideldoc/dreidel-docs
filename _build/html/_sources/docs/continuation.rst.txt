@@ -1,0 +1,14 @@
+Continuation and backup
+=======================
+
+Database failover
+-----------------
+
+Personal and sensitive data backups
+-----------------------------------
+
+Continuous integration and service sustainability
+-------------------------------------------------
+
+Blue/Green deployment strategy
+------------------------------
