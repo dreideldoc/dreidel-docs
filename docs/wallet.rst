@@ -196,5 +196,15 @@ external open-source system metabase is used.
 The system allows you to view the data of the database tables in a convenient format.
 It also allows to create own reports, upload data and notify by e-mail.
 
+Core tables list:
+
 .. image:: img/metabase.jpg
+
+Core wallets list (balances of client's wallets):
+
+.. image:: img/core_wallets.jpg
+
+Core feed (transaction details):
+
+.. image:: img/core_feed.jpg
 
