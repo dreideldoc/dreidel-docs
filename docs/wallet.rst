@@ -8,11 +8,11 @@ A new customer can go through the registration process independently, in two pla
 
 On the bank product authorisation page:
 
-.. image:: img/bank_req.jpg
+.. image:: img/bank_reg.jpg
 
 On the authorisation page of the Digital assets app:
 
-.. image:: img/crypto_req.jpg
+.. image:: img/crypto_reg.jpg
 
 In order to pass, it is necessary to specify
 the parameters email, phone, first name, last name, password and select the country.
@@ -131,7 +131,7 @@ you need to use the internal core/manage application.
 The Profiles page displays all the current accounts,
 as well as the functionality to create Business users (normal account type) or Business Accounts
 
-.. image:: img/core_business.jp
+.. image:: img/core_business.jpg
 
 Bank and digital account management
 ------------------------------------
