@@ -6,11 +6,11 @@ Sign-up (Customer on-boarding)
 Personal accounts are registered on the login page.
 A new customer can go through the registration process independently, in two places.
 
-1) On the bank product authorisation page:
+On the bank product authorisation page:
 
 .. image:: img/bank_req.jpg
 
-2) On the authorisation page of the Digital assets app:
+On the authorisation page of the Digital assets app:
 
 .. image:: img/crypto_req.jpg
 
@@ -130,6 +130,7 @@ For manual creation of profiles, as well as business profiles (accounts),
 you need to use the internal core/manage application.
 The Profiles page displays all the current accounts,
 as well as the functionality to create Business users (normal account type) or Business Accounts
+
 .. image:: img/core_business.jp
 
 Bank and digital account management
