@@ -23,7 +23,7 @@ business_whenever  Service for business_sidekiq queues           RoR application
 core-whenever      Service for core_sidekiq queues               RoR application 
 core-docs          Public Core API documentation (rst based)     RoR web-application
 flexy-commission   Commission calculation application            Python app
-flexy-commis-admin Interface to regulate commission rules        Python web-app
+flexy-comm-admin   Interface to regulate commission rules        Python web-app
 flexy-guard        Payment filtering web-service                 Python app
 flexy-guard-admin  Web interface and admin panel for flexy-guard Python web-app 
 demo               Just few static pages for checkout demo       Python web-app
