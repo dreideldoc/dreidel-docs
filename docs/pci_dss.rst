@@ -15,11 +15,6 @@ business           Public payment API and checkout/payment form  RoR web-applica
 core               Financial ledger for the operations, uses the logic of calculating commissions and wallet balances         RoR web-application
 business-sidekiq   Sidekiq job schedule for business web-service RoR application 
 business_whenever  Service for regulating queues for business_sidekiq  RoR application
-core_whenever
-core_docs
-flexy-commission
-flexy-commission-admin
-
 flexy-guard        Payment filtering web-service                 Python web-app
 demo               Just few static pages for checkout demo       Python web-app
 tests              Integration tests for all components          Python/Selenium web-app
