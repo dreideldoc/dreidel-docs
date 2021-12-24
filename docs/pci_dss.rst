@@ -11,13 +11,19 @@ List of system components
 =================  ============================================= =======================
 Name               Description                                   Type
 =================  ============================================= =======================
-business           Public payment API and checkout/payment form  RoR web-application
-core               Financial ledger for the operations.          RoR web-application
+business           Public payment API and checkout form,         RoR web-application
+                   receives incoming callbacks and
+                   sends payment requests to providers
+core               Financial ledger for the operations,          RoR web-application
+                   uses the logic of calculating commissions
+                   and stores the wallet balances
 business-sidekiq   Sidekiq job schedule for business web-service RoR application 
+                   controls the change of transaction status
 business_whenever  Service for business_sidekiq queues           RoR application 
 core-whenever      Service for core_sidekiq queues               RoR application 
 core-docs          Public Core API documentation (rst based)     RoR web-application
 flexy-commission   Commission calculation application            Python app
+flexy-commis-admin Interface to regulate commission rules        Python web-app
 flexy-guard        Payment filtering web-service                 Python app
 flexy-guard-admin  Web interface and admin panel for flexy-guard Python web-app 
 demo               Just few static pages for checkout demo       Python web-app
@@ -25,7 +31,8 @@ tests              Integration tests for all components          Python/Selenium
 metabase           Data analysis web application (reports)       Java web-application
 wallet-web         Wallet web application                        RoR web-application
 banking-web        Online banking web application                RoR web-application
-settings           System and account settings                   RoR web-application
+settings           Applications for adjusting the settings       RoR web-application
+                   of different providers                    
 core-sidekiq       Sidekiq job schedule for core web-service     RoR application
 business-docs      Public API documentation (rst based)          RoR web-application
 minio              Static content local storage                  Java web-application
@@ -34,6 +41,7 @@ rate-admin         Web interface and admin panel for rate        Python web-app
 card-storage       Encrypted persisten card-storage (not used)   RoR app
 mongo-express      Web interface to manage MongoDB               NodeJS app
 mongo              Mongo database for storing stats and rates    Mongo
+                   commission rules and counts various counters
 postgres           PostgresDB - main data storage for            Postgres
                    core/business/settings apps                   
 redis              In-memory data storage, using as fast cache   Redis
