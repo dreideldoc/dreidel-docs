@@ -69,3 +69,84 @@ Processing sensitive data components
 - Interacts (business web-service) using this token with the following system components: flexy-guard service, internally within business web-service
 - Retrieves (business web-service) using this token sensitive data from in-memory hash table and sends to the 3d party bank acquier or payment service provider's API
 - Logs sanetized sensitive data (6x4 masekd card number) to InteractionLogs table in business web-service data-base
+
+Infrastructure specification
+------------------------------------
+For our application infrastructure we need the deployment of servers with provided specification(default recommended configuration)
+
+For the base default PCI DSS deployment we need 5 servers in infrastructure
+
+1. Bastion server - VPN gateway server for accessing our infrastructure
+
+- 2 CPU, 2 Gb RAM, 20 Gb SSD
+- Soft: OpenVPN
+- OS: Ubuntu 20
+
+2. Log server - collector of all logs from all servers and all services
+
+- 4+ CPU, 16+ Gb RAM, 500 Gb SSD
+- Soft: ELK, Wazuh
+- OS: Ubuntu 20
+
+3. Tower(Gitlab) server - server with Gitlab server and tools for deployment. Also gitlab-runner for building we registering on this server
+
+- 4+ CPU, 8+ Gb RAM, 200 Gb SSD
+- Soft: Docker, docker-compose, Ansible
+- OS: Ubuntu 20
+
+4. Main application server - server with Docker for starting application
+
+- 4+ CPU, 16+ RAM, 100 Gb SSD
+- Soft: Docker, docker-compose
+- OS: Ubuntu 18.04
+
+5. Database server (PostgreSQL 10+)
+
+- 2+ CPU, 4+ Gb RAM, 50 Gb SSD
+- Soft: PostgreSQL Server 11
+- OS: Ubuntu 20
+
+The map of network relations in our infrastructure 
+--------------------------------------------------
+
+.. image:: img/pci_map.png
+
+The description of deployment new environment of ReactivePay product
+--------------------------------------------------------------------
+
+1. Creating a Group and project repository in this group for new customer in the newly created and configured Gitlab server.
+
+2. Creating a user deployer in Gitlab server and setting password for this user and adding SSH key.
+
+3. Importing our software code to the created repository.
+
+.. image:: img/pci_git.png
+
+4. Making all requiring changes to the repository (all the variables in CI-CD branch) in folder cicd/inventories/products/PROJECTNAME/production/group_vars/ files all.yml and vault.yml
+
+5. On the main application server we deploy Nginx and configure it with our Ansible playbook with a predefined domain name for our application. Adding to the NGINX generated SSL certificates and then all the upstreams and virtual hosts will be ready to use. Can be used as a wildcard SSL certificate or individual for each service (wallet.DOMAIN.TLD, core.DOMAIN.TLD, business.DOMAIN.TLD etc.)
+
+6. Registering the 2 Gitlab-runners: one Gitlab runner for building images from source(better to deploy on separate VM) and other one for deploying the product (in most cases on server where Docker containers will be started)
+
+7. In existing project in file .gitlab-ci.yml checking and replacing the tags for stages (replace the default tags with ‘reactivepay’ word to something with ‘NEWPROJECTNAME’)
+
+8. In Project settings in section CI/CD we adding all needed variables for build and deploy: REGISTRY_URL, REGISTRY_USER,  REGISTRY_PASSWORD, PROD_VAULT and PROJECT_NAME.
+
+9. In develop or master branch (depends on customer choice of main branch in repository) we creating tag like vX.X.X where X.X.X is a version of our release for production - for example v0.0.1. After that you will see the started new pipeline in section CI/CD. In pipeline you will see the stages for building and deploying application.
+
+.. image:: img/pci_deploy.png
+
+10. The automatic (Auto-...) stages are starting automatically when tagging commit or branch with tag ’vX.X.X’ (X.X.X is version number as mentioned above).  The deploy stage is not starting automatically and should be triggered manually by pressing button Deploy to production/Deploy to dev
+
+11. After deploying the software the new images will be applied on Application server and docker-compose will bring up the services with db migrations if its required.
+
+12. After that all the services will be available with main domain virtual host that were configured before.
+
+.. image:: img/pci_wallet.png
+
+.. image:: img/pci_demo.png
+
+
+
+
+
