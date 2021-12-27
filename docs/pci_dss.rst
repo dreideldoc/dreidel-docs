@@ -142,7 +142,7 @@ The description of deployment new environment of ReactivePay product
 
 12. After that all the services will be available with main domain virtual host that were configured before.
 
-.. image:: img/pci_wallet.png
+.. image:: img/pci_wallet2.png
 
 .. image:: img/pci_demo.png
 
