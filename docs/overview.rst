@@ -4,7 +4,7 @@ System overview
 Abstract
 --------
 
-ReactivePay is a simple payment service provider & fund storage (wallets) project with open architecture.
+Dreidelpay is a simple payment service provider & fund storage (wallets) project with open architecture.
 
 Easy to install, maintain and operate, this project contains only basic and mandatory functions
 which could be used/deployed within a payment company.
