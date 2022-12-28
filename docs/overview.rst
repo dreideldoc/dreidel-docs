@@ -4,7 +4,7 @@ System overview
 Abstract
 --------
 
-dreidel pay is a simple payment service provider & fund storage (wallets) project with open architecture.
+Dreidel pay is a simple payment service provider & fund storage (wallets) project with open architecture.
 
 Easy to install, maintain and operate, this project contains only basic and mandatory functions
 which could be used/deployed within a payment company.
@@ -97,4 +97,4 @@ Security and encryption
 - Intra service communication secured by DMZ network architecture and service-to-service authentication
 - Sensitive data and customer private data both are encrypted in database and could be stored on dedicated location
   according to local regulatory requirements
-- ReactivePay is PCI DSS compatible solution
+- DreidelPay is PCI DSS compatible solution
