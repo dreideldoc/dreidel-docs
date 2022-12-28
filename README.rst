@@ -1,7 +1,7 @@
-Reactive-Pay
+Dreidel-Pay
 ========
 
-Reactive-Pay is a reliable and fast framework for payment processing system builders and developers.
+Dreidel Pay is a reliable and fast framework for payment processing system builders and developers.
 Aim of this project is to provide a reliable framework/core for rapid payment and classy wallets development.
 
 $project is a set of micro-service, that could be used independently and attached as an add-on feature to any established system,
@@ -20,7 +20,7 @@ Features
 Deployment
 ------------
 
-Deploy Reactive-Pay by following the steps:
+Deploy Dreidel Pay by following the steps:
 
 - Fork the repository
 - Use Kubernetes orchestration service to deploy micro-service
