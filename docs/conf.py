@@ -43,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Reactive-pay'
-copyright = u'2019, Reactive-pay'
+project = u'Dreidel Pay'
+copyright = u'2023, Private Payment institution'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
